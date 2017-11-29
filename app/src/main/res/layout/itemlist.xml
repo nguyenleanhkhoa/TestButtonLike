@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+       <LinearLayout
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+           <TextView
+               android:id="@+id/txttenuser"
+               android:text="tên người dùng"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/txtnoidung"
+               android:text="Nôi dung"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:gravity="right"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="20dp">
+               <TextView
+
+                   android:id="@+id/txtcount"
+                   android:text="count"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <com.like.LikeButton
+                   android:layout_marginRight="10dp"
+                   android:layout_marginBottom="5dp"
+                   android:id="@+id/thumb_button"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   app:circle_end_color="@android:color/holo_blue_dark"
+                   app:circle_start_color="@android:color/holo_blue_bright"
+                   app:dots_primary_color="@android:color/holo_blue_light"
+                   app:dots_secondary_color="@android:color/holo_blue_dark"
+                   app:icon_size="50dp"
+                   app:like_drawable="@drawable/thumb_on"
+                   app:unlike_drawable="@drawable/thumb_off" />
+           </LinearLayout>
+       </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
